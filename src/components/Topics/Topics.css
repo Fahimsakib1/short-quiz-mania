@@ -1,0 +1,12 @@
+.header-title1{
+    font-size: 40px;
+}
+
+.btn-primary-new{
+    color: white;
+    background-image: linear-gradient(to right,rgb(195, 56, 56), rgb(162, 13, 162));
+}
+
+.header-p{
+    text-align: justify;
+}

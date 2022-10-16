@@ -1,0 +1,10 @@
+.custom-bg-image{
+    background-color: rgb(220, 219, 219);
+}
+.btn-primary-css{
+    background-image: linear-gradient(to right,rgb(195, 56, 56), rgb(162, 13, 162));
+}
+/* .custom-bg-image:hover{
+    transform: scale(1.1);
+    transition: transform 2s ease-in;
+} */

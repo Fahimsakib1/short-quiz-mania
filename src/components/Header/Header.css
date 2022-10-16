@@ -1,0 +1,83 @@
+/* .main-navbar{
+    z-index: 100;
+} */
+
+.navbar-container{
+    background-image: linear-gradient(to right,  rgb(38, 33, 33), rgb(40, 8, 104));
+}
+
+.header-image{
+    width: 70px;
+    height: 80px;
+    border-radius: 60%;
+    /* border: 2px solid rgb(77, 8, 167); */
+    /* border: 2px solid blue */
+    
+}
+.header-title{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-link:hover{
+    color: blue;
+}
+.website-title{
+    font-size: 30px;
+    color: goldenrod;
+    font-weight: 500;
+}
+
+.header-links{
+    margin-top: 20px;
+}
+.header-links a {
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding: 2px 10px;
+}
+
+.header-links a:hover{
+    color: white;
+    background-color: black;
+    border: 1px solid rgb(207, 154, 19);
+    border-radius: 10px;
+    /* padding: 2px 10px; */
+}
+
+
+/* .active{
+    background-color: rgb(20, 20, 20);
+    color: blue;
+    border: 2px solid goldenrod;
+    color: white !important;
+    padding: 5px 10px;
+    border-radius: 15px;
+} */
+
+
+.active{
+    /* background-color: rgb(20, 20, 20); */
+    color: blue;
+    border-bottom: 3px solid rgb(237, 177, 23);
+    color: white !important;
+    padding: 2px 10px;
+    border-radius: 10px;
+}
+
+
+/* .header-links a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    transition: 0.5s;
+    background: rgb(237, 177, 23);
+    bottom: -10px;
+    left: 0;
+}
+.header-links a:hover::after{
+    width: 100%;
+} */

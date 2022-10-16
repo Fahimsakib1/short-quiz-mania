@@ -1,0 +1,148 @@
+/* Registration form related css */
+.password-react-parent-div{
+    margin-top: -20px;
+}
+.eye-icon{
+    /* position: relative;
+    top: 10; */
+    color: black;
+    font-size: 20px;
+}
+/* .eye-icon-div{
+    display: flex;
+    justify-content: end;
+    position: relative;
+    top: 28px;
+    margin-right: 10px;
+} */
+
+.envelope-icon{
+    /* position: relative;
+    top: 10; */
+    color: black;
+    font-size: 20px;
+}
+
+.envelope-icon-div{
+    display: flex;
+    justify-content: end;
+    position: relative;
+    top: -27px;
+    margin-right: 10px;
+}
+.check-me-out{
+    margin-top: 10px;
+}
+
+
+.registration-form-parent-div{
+    /* background-image: linear-gradient(to right,rgb(42, 16, 146),rgb(168, 55, 14)); */
+    border-radius: 20px;
+    padding-bottom: 30px;
+    background-image: linear-gradient(to right,  rgb(38, 33, 33), rgb(40, 8, 104));
+    color: white;
+    position: relative;
+}
+
+.login-image{
+    /* height: 75%; */
+}
+
+.user-added-successfully-text-color{
+    color: rgb(11, 180, 11);
+    font-weight: bold;
+}
+
+.google-github-facebook-button-container{
+    display: block;
+}
+
+.google-button-container{
+    /*  */
+}
+.btn-primary-google{
+    background-color: rgb(215, 128, 42);
+    color: black;
+    font-weight: bold;
+}
+
+.btn-primary-google:hover{
+    background-color: rgb(162, 164, 18);
+    color: black;
+}
+
+.btn-primary-github{
+    background-color: rgb(138, 13, 145);
+    color: rgb(244, 240, 240);
+    font-weight: bold;
+}
+
+.btn-primary-github:hover{
+    background-color: rgb(7, 7, 7);
+    color: rgb(252, 249, 249);
+}
+.btn-primary-github:hover .github-icon-form{
+    color: white;
+}
+
+.btn-primary-facebook{
+    background-color: rgb(35, 69, 206);
+    color: rgb(244, 240, 240);
+    font-weight: bold;
+}
+
+.btn-primary-facebook:hover{
+    background-color: rgb(38, 8, 136);
+    color: rgb(252, 249, 249);
+}
+
+.github-icon-form{
+    color: black;
+    font-weight: bold;
+}
+
+.github-icon-form:hover{
+    color: white;
+}
+
+.facebook-icon-form{
+    color: black;
+}
+
+.btn-primary-facebook:hover .facebook-icon-form{
+
+    color: white;
+}
+.google-icon-form{
+    color: black;
+    font-size: 8px;
+}
+
+
+
+@media only screen and (max-width: 550px) {
+    /* .eye-icon-div{
+        display: flex;
+        justify-content: end;
+        margin-left: 235px;
+        margin-top: -44px;
+        width: 20%;
+        position: relative;
+    } */
+
+}
+
+@media only screen and (max-width: 530px) {
+    .registration-form-container, .registration-form-container{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .google-button, .facebook-button, .github-button{
+        font-size: 11px;
+        font-weight: 600;
+    }
+}
+
+
