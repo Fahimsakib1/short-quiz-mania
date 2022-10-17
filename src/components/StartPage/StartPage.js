@@ -17,8 +17,8 @@ const StartPage = () => {
             <div className='banner'>
                 <div className='content d-flex align-items-center justify-content-center'>
                     <div className='my-auto start-page-content'>
-                        <h1>Welcome to The Website</h1>
-                        <p>If you are new to the website then please login or register to see the contents..</p>
+                        <h1 style={{color: 'goldenrod'}}>Welcome to Quiz Mania</h1>
+                        <p className='fs-5'>If you are new to the website then please login or register to see the contents..</p>
 
                         <div>
                             <Link to='/register'><button className='fs-5 start-page-register-button' type='button'>Register</button></Link>

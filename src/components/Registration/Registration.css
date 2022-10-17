@@ -19,7 +19,18 @@
     .google-button, .facebook-button, .github-button{
         width: 100% !important;
     }
-    .name-input-field{
-        
-    }
+    
 }
+
+@media only screen and (max-width: 400px){
+    /* .registration-form-parent-div{
+        width: 490px !important;
+        background-color: rgb(22, 106, 78) !important;
+    } */
+    /* .image-div img{
+        width: 350px !important;
+        background-color: aquamarine !;
+
+    } */
+}
+

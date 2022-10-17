@@ -19,7 +19,7 @@ const Footer = () => {
                     <div className="">
                         <div className="d-flex justify-content-center">
                             <img className="" src={logo4} alt="" style={{width:"50px", height:"50px", marginTop:"-5px", borderRadius:"50%", marginRight: '10px'}} />
-                                <h3 className="text-warning">Short Quiz Mania</h3>
+                                <h3 className="text-warning">Quiz Mania</h3>
                         </div>
                         <p className="text-muted">Dhaka, Bangladesh</p>
                         <p className="text-muted text-center footer-email">Email: shortquizmania@gmail.com</p>

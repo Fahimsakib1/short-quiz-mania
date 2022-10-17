@@ -47,8 +47,8 @@ const Signin = () => {
             const user = result.user;
             //console.log(user);
             Swal.fire(
-                'Good job!',
-                'Logged In Successfully',
+                `Hi! ${user.email}`,
+                'You are Logged In Successfully',
                 'success'
             );
             event.target.reset();
