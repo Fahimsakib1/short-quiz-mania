@@ -8,7 +8,7 @@ import { faEye, faEyeSlash, faEnvelope } from '@fortawesome/free-solid-svg-icons
 import { getAuth, sendPasswordResetEmail, signInWithEmailAndPassword } from 'firebase/auth';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 
 import pic1 from '../../images/Homepage/1.jpg';
@@ -23,8 +23,11 @@ import { AuthContext } from '../UserContext/UserContext';
 const Signin = () => {
     
     const {signInUser} = useContext(AuthContext)
-    console.log(signInUser);
-    const navigate = useNavigate();
+    console.log("Signed IN User ",signInUser);
+    
+    const navigate = useNavigate()
+    const location = useLocation();
+    const from = location.state?.from?.pathname || '/'
 
     const [userEmail, setUserEmail] = useState('')
     const [successLogin, setSuccessLogin] = useState(false);
@@ -49,7 +52,8 @@ const Signin = () => {
                 'success'
             );
             event.target.reset();
-            navigate('/topics');
+            // navigate('/topics');
+            navigate(from, {replace: true})
 
         })
         .catch(error => {
@@ -57,7 +61,7 @@ const Signin = () => {
             Swal.fire({
                 icon: 'error',
                 title: 'Oops...',
-                text: 'Something went wrong!'
+                text: 'Sign in failed!'
             })
         })
     }

@@ -56,6 +56,55 @@
     border: 3px solid rgb(22, 5, 100);
 }
 
+/* Man With Laptop Section Custom CSS */
+.man-with-laptop{
+    margin-top: 50px;
+}
+
+.read-more-button:hover a{
+    color: white;
+
+}
+
+/* Student Feedback Section Custom CSS */
+.student-feedback-title{
+    margin-top: 100px;
+}
+.rating-and-all{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-right: 50px;
+
+}
+
+.feedback-student-name{
+    margin-top: 15px;
+}
+
+.fa-star, .fa-star-half-stroke{
+    color: orange;
+    font-size: 16px;
+}
+
+.feedback-job-title{
+    margin-top: -7px;
+}
+
+/* Student Feedback Section Side Arrow Custom CSS */
+.arrow-padding{
+    padding: 10px;
+}
+
+.arrow-text-primary{
+    color:#0d6efd ;
+}
+
+.feedback-section-arrow:hover{
+    background-color: #0d6efd;
+    color: white;
+}
+
+
 @media only screen and (max-width: 980px) {
     .content {
         margin-top: 170px;

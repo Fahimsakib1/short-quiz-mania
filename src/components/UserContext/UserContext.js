@@ -17,11 +17,18 @@ const UserContext = ({children}) => {
     
     
     const createUser = (email, password) => {
+        setLoading(true);
         return createUserWithEmailAndPassword(auth, email, password);
     }
 
     const signInUser = (email, password) => {
+        setLoading(true);
         return signInWithEmailAndPassword(auth, email, password);
+    }
+
+    const handleSignOut = () => {
+        setLoading(true);
+        return signOut(auth);
     }
 
     useEffect( () => {
@@ -31,14 +38,9 @@ const UserContext = ({children}) => {
             console.log("Auth State Changed User", user);
         })
 
-        return () => {
-            unsubscribe();
-        }
-    }, [])
+        return () => unsubscribe();
 
-    const handleSignOut = () => {
-        return signOut(auth);
-    }
+    }, [])
     
     const signInWithGoogle = () => {
         return signInWithPopup(auth, providerGoogle)

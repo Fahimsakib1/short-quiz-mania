@@ -17,27 +17,27 @@ const Header = () => {
     const { user, handleSignOut } = useContext(AuthContext);
     //console.log("User consume on header",user);
 
-    
+
     const signOutUser = () => {
         handleSignOut()
-        .then( () => {
-            // Swal.fire(
-            //     'Good job!',
-            //     'Log out Done',
-            //     'success'
-            // );
-        })
-
-        .catch(error => {
-            console.error(error)
-            Swal.fire({
-                icon: 'error',
-                title: 'Oops...',
-                text: 'Something went wrong!'
+            .then(() => {
+                // Swal.fire(
+                //     'Good job!',
+                //     'Log out Done',
+                //     'success'
+                // );
             })
-        })
+
+            .catch(error => {
+                console.error(error)
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Something went wrong!'
+                })
+            })
     }
-    
+
     return (
         <Navbar collapseOnSelect expand="md" variant="dark" className='pb-4 navbar-container'>
             <Container className='d-flex flex-md-column flex-lg-row flex-xl-row'>
@@ -69,14 +69,18 @@ const Header = () => {
                         {/* <NavLink to='/charts'>Charts</NavLink> */}
                         <NavLink to='/blogs'>Blogs</NavLink>
                         <NavLink to='/about'>About Us</NavLink>
-                        <NavLink to='/register'>Register</NavLink>
+                        {/* <NavLink to='/register'>Register</NavLink> */}
                         {/* <NavLink to='/login'>Login</NavLink> */}
                         {
-                            user?.uid 
-                            ? 
-                            <Link onClick={signOutUser} className='text-danger'>LOG OUT</Link>
-                            :
-                            <Link to='/login'>LOGIN</Link>
+                            user?.uid
+                                ?
+                                <Link onClick={signOutUser} className='text-danger'>Log Out</Link>
+                                :
+                                <>
+                                    <NavLink to='/register'><span style={{color:"goldenrod"}}>Register</span></NavLink>
+
+                                    <Link to='/login'><span style={{color:"goldenrod"}}>Login</span></Link>
+                                </>
                         }
                         <div className='my-auto text-warning'>
                             {
