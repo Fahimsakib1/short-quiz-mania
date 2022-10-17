@@ -38,6 +38,8 @@
 
 .option-div{
     margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 
@@ -62,5 +64,16 @@
 @media only screen and (max-width: 320px) {
     .option-div {
         font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .option-div {
+        width: 65vw;
+        margin-left: 4px;
+        /* margin-right: 7px; */
+    }
+    .option-parent-div{
+        
     }
 }

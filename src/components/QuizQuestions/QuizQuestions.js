@@ -88,7 +88,7 @@ const QuizQuestions = ({ EachQuestion, index, setCount, count, handleTotalCorrec
 
 
                     {
-                        options.map((EachOption, index) => <div key={index} onClick={(e) => handleCorrectAnswer(e, EachOption)} className=''><strong className='option-div d-flex justify-content-start align-items-center border border-2 border-primary-new rounded-2 py-4 mx-4 text-white'><input className='ms-3 me-2' type="radio" name={id} id='' />{EachOption}</strong></div>)
+                        options.map((EachOption, index) => <div key={index} onClick={(e) => handleCorrectAnswer(e, EachOption)} className=''><strong className='option-div d-flex justify-content-start align-items-center border border-2 border-primary-new rounded-2 py-4  text-white'><input className='ms-3 me-2' type="radio" name={id} id='' />{EachOption}</strong></div>)
                     }
 
                     <div className=' mx-auto w-75 mb-4'>
