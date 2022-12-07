@@ -10,10 +10,10 @@ const PrivateRoute = ({ children }) => {
     
     if (loading) {
         return <div className='text-center my-auto'>
-            <div className="spinner-border mt-5 px-4 py-4" role="status">
-                <span className="visually-hidden mt-5 text-center">Loading...</span>
-            </div>
-        </div>
+                    <div className="spinner-border mt-5 px-4 py-4" role="status">
+                        <span className="visually-hidden mt-5 text-center">Loading...</span>
+                    </div>
+                </div>
     }
 
     if (user && user.uid) {

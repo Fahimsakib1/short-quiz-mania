@@ -100,7 +100,7 @@ const QuizQuestions = ({ EachQuestion, index, setCount, count, handleTotalCorrec
                     </div>
 
                 </div>
-                <ToastContainer />
+                <ToastContainer /> 
             </div>
         </div>
     );

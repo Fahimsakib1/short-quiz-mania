@@ -77,15 +77,24 @@ const Header = () => {
                                 <Link onClick={signOutUser} className='text-danger'>Log Out</Link>
                                 :
                                 <>
-                                    <NavLink to='/register'><span style={{color:"goldenrod"}}>Register</span></NavLink>
+                                    <NavLink to='/register'><span style={{ color: "goldenrod" }}>Register</span></NavLink>
 
-                                    <Link to='/login'><span style={{color:"goldenrod"}}>Login</span></Link>
+                                    <Link to='/login'><span style={{ color: "goldenrod" }}>Login</span></Link>
                                 </>
                         }
                         <div className='my-auto text-warning'>
                             {
                                 user?.uid ?
-                                    <span> Welcome, {user.email}</span>
+                                    <>
+                                        {
+                                            user?.email
+                                                ?
+                                                <span>Welcome, {user.email}</span>
+                                                :
+                                                <span>Welcome, {user.displayName}</span>
+
+                                        }
+                                    </>
                                     :
                                     <p>{''}</p>
                             }
