@@ -275,9 +275,9 @@ const Registration = () => {
                             <button onClick={handleGoogleSignIn} className='google-button border border-0 btn btn-primary-google w-75'>Google Sign in <Link className='m-1 ms-3' title="Google" target="_blank" role="button"><FaGoogle className='fs-4 google-icon-form'></FaGoogle></Link></button>
                         </div>
 
-                        <div className='facebook-button-container  rounded-4 mb-3'>
+                        {/* <div className='facebook-button-container  rounded-4 mb-3'>
                             <button onClick={handleFacebookSignIn} className='facebook-button border border-0 btn btn-primary-facebook w-75'>Facebook Sign in <Link className='m-1 ms-2' title="Facebook" target="_blank" role="button"><FaFacebook className='fs-3 facebook-icon-form'></FaFacebook></Link></button>
-                        </div>
+                        </div> */}
 
                         <div className='github-button-container  rounded-4 mb-3 '>
                             <button onClick={handleGithubSignIn} className='github-button border border-0 btn btn-primary-github w-75'>Github Sign in <Link className='m-1 ms-2' title="GitHub" target="_blank" role="button"><FaGithub className='fs-3 github-icon-form  fw-bold'></FaGithub></Link></button>

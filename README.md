@@ -14,7 +14,7 @@ This website is made by using React Router DOM. and for styling I have used boot
 - If someone wants to visit a route which is not assigned then an error message will be shown.
 
 ### GitHub Link of This Project: 
-GitHub Link: https://github.com/programming-hero-web-course2/b6-quiz-crackerz-Fahimsakib1
+GitHub Link: https://github.com/Fahimsakib1/short-quiz-mania
 
 ### Netlify Live Website Link:
 Live site: https://bright-dieffenbachia-546722.netlify.app/
